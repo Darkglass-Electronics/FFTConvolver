@@ -77,6 +77,11 @@ public:
   * @brief Resets the convolver and discards the set impulse response
   */
   void reset();
+
+  /**
+  * @brief Resets the convolvers buffers while keeping the loaded impulse response
+  */
+  void resetState();
   
 private:
   size_t _blockSize;
